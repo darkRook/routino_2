@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/create_account_bottom_sheet"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/root_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/main_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/routino_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/routino"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/routino_image_view"
+                android:text="@string/app_name_spaced"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:id="@+id/static_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGrey"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/routino_image_view"/>
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_edge"
+                android:layout_below="@id/static_text_view"
+                android:padding="15dp"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_edge"
+                android:layout_below="@id/name_edit_text"
+                android:padding="15dp"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_edge"
+                android:layout_below="@id/email_edit_text"
+                android:padding="15dp"
+                android:hint="@string/fui_password_hint"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/c_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_edge"
+                android:layout_below="@id/password_edit_text"
+                android:padding="15dp"
+                android:hint="@string/c_password_hint"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioGroup
+                android:layout_below="@+id/c_password_edit_text"
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp">
+
+
+                <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student"
+                android:textSize="18sp"
+                    android:textColor="@color/darkGrey"/>
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teacher"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGrey"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contributer"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGrey"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/create_auth_static_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_auth"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/darkGrey"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <Button
+                android:id="@+id/sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/create_auth_static_text_view"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:text="@string/sign_up"
+                android:layout_marginBottom="15dp"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

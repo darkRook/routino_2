@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "431850567857",
+    "firebase_url": "https://routino-af7c9.firebaseio.com",
+    "project_id": "routino-af7c9",
+    "storage_bucket": "routino-af7c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431850567857:android:103c785bbb3b7859",
+        "android_client_info": {
+          "package_name": "com.example.stationx.routino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431850567857-savb0hg3a537tkm3bnlgnjd5ga6mdfg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stationx.routino",
+            "certificate_hash": "fc168ed8e23c333721519bf9c1a4aabf75e09b8c"
+          }
+        },
+        {
+          "client_id": "431850567857-ua8v85hlphtfnmnkl2gicohedhqkgive.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwNOw1Nh8rKl-qTnkY8XjLLJD20ecBduE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431850567857-ua8v85hlphtfnmnkl2gicohedhqkgive.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
